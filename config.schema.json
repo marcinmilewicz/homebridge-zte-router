@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "ZTERouterHomebridgePlugin",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -10,6 +10,17 @@
         "type": "string",
         "required": true,
         "default": "Example Dynamic Platform"
+      },
+      "host": {
+        "title": "ZTE Router IP Address",
+        "type": "string",
+        "required": true,
+        "format": "ipv4"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true
       }
     }
   }
